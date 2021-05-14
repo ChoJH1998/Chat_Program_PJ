@@ -54,7 +54,7 @@ class videosocket:
                 raise RuntimeError("Socket connection broken")
             msgArray.append(chunk)
             totrec += len(chunk)
-        return ''.join(msgArray)
+        return msgArray
 
    
 
